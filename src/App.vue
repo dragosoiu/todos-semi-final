@@ -43,6 +43,7 @@
         <a href="http://todomvc.com">TodoMVC</a>
       </p>
     </footer>
+    <todos-actions/>
   </div>
 </template>
 
@@ -50,14 +51,14 @@
  
 import TodosInput from "./components/TodosInput";
 import TodosList from "./components/TodosList";
-// import TodosActions from "./components/TodosActions";
+ import TodosActions from "./components/TodosActions";
 
 export default {
   name: "App",
   components: {
               TodosInput,
               TodosList,
-             // TodosActions
+              TodosActions
   },
     data() {
         return {
